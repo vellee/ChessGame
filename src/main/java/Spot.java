@@ -4,7 +4,7 @@ public class Spot {
     int y;
 
     public Spot(String x, int y) {
-        if (x.compareTo("h") > 0 || y > 8 || y < 0) {
+        if (x.compareTo("h") > 0 || y > 8 || y <= 0) {
             throw new IllegalArgumentException("Incorrect value for a spot");
         } else {
             this.x = x;
